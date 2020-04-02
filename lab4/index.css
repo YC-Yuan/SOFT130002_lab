@@ -1,0 +1,44 @@
+#container{
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.row{
+    margin: 1rem;
+}
+
+.thumbnail{
+    text-align: center;
+    background-color: #222222;
+    padding: 2rem;
+}
+
+.hotImg{
+    width: 100%;
+}
+
+.caption h3,.caption p{
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.carousel-caption{
+    font-size: 3rem;
+
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(34,34,34,1);
+    color: rgba(125,157,157,1);
+}

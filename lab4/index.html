@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab4首页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0,
+                                     user-scalable=no">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="container">
+    <!--导航栏-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display 移动端整合按钮 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">三鱼一茶</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling 导航栏具体内容 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">浏览页</a></li>
+                    <li><a href="#">搜索页</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">个人中心<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span>上传照片</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span>我的照片</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>我的收藏</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--轮播图组建-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/carousel_1.jpg" alt="轮播图1" class="carouselImg">
+                <div class="carousel-caption">
+                    <p>轮播图1</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel_2.jpg" alt="轮播图2">
+                <div class="carousel-caption">
+                    <p>轮播图2</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carousel_3.jpg" alt="轮播图3">
+                <div class="carousel-caption">
+                    <p>轮播图3</p>
+                </div>
+            </div>
+        </div>
+        <!-- Controls控制键 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--图片展示-->
+    <div class="row">
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/1.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>镁历带叫糖</h3>
+                    <p>这张图啊，拍得可真好。这山、水、这光影、看那教堂的尖尖顶，哦我的上帝啊！美极了！</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/2.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/3.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/4.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/5.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/6.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/1.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col">
+            <div class="thumbnail">
+                <img class="hotImg" src="images/hottest/2.jpg" alt="热门图片">
+                <div class="caption">
+                    <h3>图片标题</h3>
+                    <p>图片介绍</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页脚-->
+    <footer>
+        <div class="container">
+            <div class="row">沪私危备案74751号</div>
+            <div class="row">版权©2001-2020 3Fish1Tea三鱼一茶 版权所有</div>
+            <div class="row">联系我们19302010020@fudan.edu.cn</div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
