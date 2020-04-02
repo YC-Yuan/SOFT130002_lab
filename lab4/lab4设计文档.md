@@ -34,9 +34,9 @@ lab4不需要模板中那么多链接，但删除多余的部分后右边的个�
 
 ## 效果图
 第一张
-![pic1](/images/designDoc/截图1.jpg)
+![pic1](./images/designDoc/截图1)
 第二张]
-![pic2](/images/designDoc/截图2.jpg)
+![pic2](./images/designDoc/截图2.jpg)
 第三张
-![pic3](/images/designDoc/截图3.jpg)
+![pic3](./images/designDoc/截图3.jpg)
 ------
