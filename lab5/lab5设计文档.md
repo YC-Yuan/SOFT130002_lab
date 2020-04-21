@@ -36,8 +36,8 @@ url形如（若干字符串）?（参数名1）=（参数1值）&（参数2）=�
 
 1.实现效果
 
-[效果图](https://github.com/YC-Yuan/SOFT130002_lab/blob/master/lab5/lab5_%E6%95%88%E6%9E%9C.png)
+![效果图](https://github.com/YC-Yuan/SOFT130002_lab/blob/master/lab5/lab5_%E6%95%88%E6%9E%9C.png)
 
 2.git截图
 
-[git截图](https://github.com/YC-Yuan/SOFT130002_lab/blob/master/lab5/lab5_gitRepo.png)
+![git截图](https://github.com/YC-Yuan/SOFT130002_lab/blob/master/lab5/lab5_gitRepo.png)
