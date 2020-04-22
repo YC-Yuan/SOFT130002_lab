@@ -34,12 +34,15 @@ let mul = document.getElementById("mul");
 mul.value = 1;
 var date = new Date();//获取初始时间
 let second = date.getSeconds();
-setInterval('timeTest()', 1000);
+var interval = setInterval('timeTest()', 1000);
 
 function timeTest() {
     if (second == new Date().getSeconds() - 5) {
         mul.value = mul.value * 2;
         second = second + 5;
+    }
+    if (mul.value == 1024 || srcond >= 60) {
+        clearInterval(interval);
     }
 }
 
