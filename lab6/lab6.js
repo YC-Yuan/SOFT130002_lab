@@ -8,25 +8,25 @@ function test() {
     testMail('12001933144', '19302010020@复旦.edu.cn');
     testRedundancy('a a b B b');
     testRedundancy('love love is more than a A a word，\n' +
-        '\n' +
-        'it says so so much.\n' +
-        '\n' +
-        'When I see sEe these ThEse four letters,\n' +
-        '\n' +
-        'I almost FeeL fEEl your touch.\n' +
-        '\n' +
-        'This is Is only happened since，\n' +
-        '\n' +
-        'I fell in love Love with you.\n' +
-        '\n' +
-        'Why this word does this This,\n' +
-        '\n' +
-        'I i haven\'t got a clue Clue clue.');
+    '\n' +
+    'it says so so much.\n' +
+    '\n' +
+    'When I see sEe these ThEse four letters,\n' +
+    '\n' +
+    'I almost FeeL fEEl your touch.\n' +
+    '\n' +
+    'This is Is only happened since，\n' +
+    '\n' +
+    'I fell in love Love with you.\n' +
+    '\n' +
+    'Why this word does this This,\n' +
+    '\n' +
+    'I i haven\'t got a clue Clue clue.');
     testKeyBoard('7_This_is_a_test', '_hs_s_a_es');
     testSpecialReverse("   Hellow  world!");
-    twoSum([14, 5, 0, 3, 21, -4, 7], 10);
+    twoSum([14, 5,0, 3, 21, -4, 7], 10);
     lengthOfLongestSubstring("123431");
-    lengthOfLongestSubstring("FudanDaXueDuoNianChanLianQuanGuoPaiMingDi3De10SuoGaoXiaoZhiYi");
+    lengthOfLongestSubstring("abcdefgaf");
 }
 
 /*
@@ -41,13 +41,23 @@ function test() {
     ②使用console.log打印计数即可，到达一分钟提前停止也需要console.log相应的提示语句。
 */
 function testTime() {
-    let num, count, date, minute, second, intervalID;
+    function Counter(){
+        let count=0;
 
+        this.getCount=function(){
+            return count;
+        };
+
+        this.addCount=function(){
+            return count++;
+        };
+    }
+
+    let num, count=new Counter(), date, minute, second, intervalID;
     function init() {
         date = new Date();
         num = 1;
         console.log(num);
-        count = 0;
         minute = date.getMinutes();
         second = date.getSeconds();
         intervalID = setInterval(function check() {
@@ -55,10 +65,10 @@ function testTime() {
                 minuteCurrent = dateCurrent.getMinutes(),
                 secondCurrent = dateCurrent.getSeconds();
             if (minuteCurrent !== minute) {//达到整分钟，停止
-                console.log("现在达到" + minuteCurrent + ":00,停止计数,已翻倍" + count + "次");
+                console.log("现在达到" + minuteCurrent + ":00,停止计数,已翻倍" + count.getCount() + "次");
                 clearInterval(intervalID);
             }
-            if (count === 10) {
+            if (count.getCount() === 10) {
                 clearInterval(intervalID);
             }
             if (secondCurrent === second + 5) {//经过5秒，翻倍并打印
@@ -70,9 +80,10 @@ function testTime() {
     function addNum() {
         num *= 2;
         second += 5;
-        count++;
+        count.addCount();
         console.log(num);
     }
+
 
     return init();
 }
@@ -287,9 +298,9 @@ PoorCountry.prototype.saySad = function () {
 };
 
 //object.create,无构造函数，只想让一个对象继承一个对象时适合
-developedCountry=Object.create(new Country());
+developedCountry = Object.create(new Country());
 
-developedCountry.sayHappy=function () {
+developedCountry.sayHappy = function () {
     console.log("I am a happy developed country.");
 };
 
