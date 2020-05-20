@@ -199,8 +199,13 @@ function tableChange(){
 
             input.setSelectionRange(0,0);
 
+            input.addEventListener("click",function(event){
+                event.stopPropagation();
+            },false);
+
             input.addEventListener("blur",function () {
                 td[i].textContent=input.value;
+                td[i].style.display="table-cell";
                 td[i].removeChild(input);
             },false);
         },false);
