@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e93ec50b-62a0-4c0d-86f6-4c09fc81fe5a" name="lab9" url="http://localhost:63342/lab9">
+        <fileTransfer port="0" mountedRoot="C:\Users\15344\Desktop\Web仓库\SOFT130002_lab\lab9" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
